@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class LinkedList {
+class singlyLinkedList {
   constructor(value){
     this.head = {
       value: value,
@@ -21,7 +21,7 @@ class LinkedList {
       this.tail.next = newNode;
       this.tail = newNode;
       this.length++;
-      return this;
+      return this.printList();
     }
     
     prepend(value) {
@@ -29,7 +29,7 @@ class LinkedList {
       newNode.next = this.head;
       this.head = newNode;
       this.length++;
-      return this;
+      return this.printList();
     }
     printList() {
       const array = [];
@@ -88,7 +88,7 @@ class LinkedList {
   
 }
 
-const myLinkedList = new LinkedList(10);
+const myLinkedList = new singlyLinkedList(10);
 myLinkedList.append(5);
 myLinkedList.append(16);
 myLinkedList.prepend(1);
