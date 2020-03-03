@@ -26,6 +26,6 @@ class BinarySearchTree {
        if(currentNode.right){
          queue.push(currentNode.right);
        }
-     }return list
-  };
+     }
+  }return list;
 }
